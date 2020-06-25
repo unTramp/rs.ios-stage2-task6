@@ -103,7 +103,6 @@
                        self.fileSizeLabel.text = [NSString stringWithFormat:@"%lux%lu %@", [self.service getPixelHeightByIndex:index], [self.service getPixelWidthByIndex:index], [self.service getDurationByIndex:index]];
                        
                    default:
-                       NSLog(@"exeption");
                        break;
                }
            });

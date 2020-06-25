@@ -51,28 +51,24 @@
             self.myCircle.layer.cornerRadius = 35;
             [NSLayoutConstraint deactivateConstraints:self.landscapeConstraints];
             [NSLayoutConstraint activateConstraints:self.portraitConstraints];
-            NSLog(@"Portrait");
             break;
             
         case UIDeviceOrientationPortraitUpsideDown:
             self.myCircle.layer.cornerRadius = 35;
             [NSLayoutConstraint deactivateConstraints:self.landscapeConstraints];
             [NSLayoutConstraint activateConstraints:self.portraitConstraints];
-            NSLog(@"Portrait");
             break;
             
         case UIDeviceOrientationLandscapeLeft:
             self.myCircle.layer.cornerRadius = 25;
             [NSLayoutConstraint deactivateConstraints:self.portraitConstraints];
             [NSLayoutConstraint activateConstraints:self.landscapeConstraints];
-            NSLog(@"Landscape");
             break;
             
         case UIDeviceOrientationLandscapeRight:
             self.myCircle.layer.cornerRadius = 25;
             [NSLayoutConstraint deactivateConstraints:self.portraitConstraints];
             [NSLayoutConstraint activateConstraints:self.landscapeConstraints];
-            NSLog(@"Landscape");
             break;
             
         default:

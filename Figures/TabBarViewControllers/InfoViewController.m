@@ -9,6 +9,7 @@
 #import "InfoViewController.h"
 #import "UIColor+ColorExtensions.h"
 #import "FileTableViewCell.h"
+#import "PictureInfoViewController.h"
 
 @interface InfoViewController () 
 @property (nonatomic, strong) UITableView* tableView;
@@ -68,6 +69,11 @@
     bgColorView.backgroundColor = [UIColor hex: @"0xFDF4E3"];
     [cell setSelectedBackgroundView:bgColorView];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    PictureInfoViewController* pictureVC = [[PictureInfoViewController alloc] init];
+    [self.navigationController pushViewController:pictureVC animated:true];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

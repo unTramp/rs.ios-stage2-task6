@@ -68,28 +68,24 @@
             [self portraitFont];
             [NSLayoutConstraint deactivateConstraints:self.landscapeConstraints];
             [NSLayoutConstraint activateConstraints:self.portraitConstraints];
-            NSLog(@"Portrait");
             break;
             
         case UIDeviceOrientationPortraitUpsideDown:
             [self portraitFont];
             [NSLayoutConstraint deactivateConstraints:self.landscapeConstraints];
             [NSLayoutConstraint activateConstraints:self.portraitConstraints];
-            NSLog(@"Portrait");
             break;
             
         case UIDeviceOrientationLandscapeLeft:
             [self landscapeFont];
             [NSLayoutConstraint deactivateConstraints:self.portraitConstraints];
             [NSLayoutConstraint activateConstraints:self.landscapeConstraints];
-            NSLog(@"Landscape");
             break;
             
         case UIDeviceOrientationLandscapeRight:
              [self landscapeFont];
             [NSLayoutConstraint deactivateConstraints:self.portraitConstraints];
             [NSLayoutConstraint activateConstraints:self.landscapeConstraints];
-            NSLog(@"Landscape");
             break;
             
         default:

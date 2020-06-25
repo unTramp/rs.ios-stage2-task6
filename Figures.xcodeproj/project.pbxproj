@@ -12,6 +12,7 @@
 		49540654249E47BD000B2B8A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49540653249E47BD000B2B8A /* InfoViewController.m */; };
 		4954065C249E48D1000B2B8A /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4954065B249E48D1000B2B8A /* GalleryViewController.m */; };
 		4954065F249E491A000B2B8A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4954065E249E491A000B2B8A /* AboutViewController.m */; };
+		4970072424A536D500CD55A5 /* PictureInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4970072324A536D500CD55A5 /* PictureInfoViewController.m */; };
 		4980C0CB249D41F5001172C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4980C0CA249D41F5001172C3 /* AppDelegate.m */; };
 		4980C0D1249D41F5001172C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4980C0D0249D41F5001172C3 /* ViewController.m */; };
 		4980C0D6249D41F8001172C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4980C0D5249D41F8001172C3 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 		4954065B249E48D1000B2B8A /* GalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		4954065D249E491A000B2B8A /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		4954065E249E491A000B2B8A /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		4970072224A536D500CD55A5 /* PictureInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureInfoViewController.h; sourceTree = "<group>"; };
+		4970072324A536D500CD55A5 /* PictureInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureInfoViewController.m; sourceTree = "<group>"; };
 		4980C0C6249D41F5001172C3 /* Figures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4980C0C9249D41F5001172C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4980C0CA249D41F5001172C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				49D4345D24A288D600831B65 /* ShowPictureViewController.m */,
 				4954065D249E491A000B2B8A /* AboutViewController.h */,
 				4954065E249E491A000B2B8A /* AboutViewController.m */,
+				4970072224A536D500CD55A5 /* PictureInfoViewController.h */,
+				4970072324A536D500CD55A5 /* PictureInfoViewController.m */,
 			);
 			path = TabBarViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				498CFF2D24A51342007C37C2 /* ButtonsTableViewCell.m in Sources */,
 				4953398C24A3B0A900399428 /* Service.m in Sources */,
 				4980C0E9249D7183001172C3 /* Triangle.m in Sources */,
+				4970072424A536D500CD55A5 /* PictureInfoViewController.m in Sources */,
 				4980C0EC249D8392001172C3 /* UIColor+ColorExtensions.m in Sources */,
 				49F89E17249FE8FF00A20DB2 /* FileTableViewCell.m in Sources */,
 				4980C0DC249D41F8001172C3 /* main.m in Sources */,

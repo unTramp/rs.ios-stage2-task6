@@ -30,7 +30,6 @@
     for (PHAsset* asset in result) {
         [self.assets addObject:asset];
     }
-    NSLog(@"ASSETS LOADED: %ld", (unsigned long)self.assets.count);
 }
 
 - (NSInteger)getNumberOfAssets {
