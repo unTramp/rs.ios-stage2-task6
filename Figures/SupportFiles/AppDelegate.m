@@ -62,6 +62,7 @@
     
     [mainVC setUpTabBar:tabBar];
     self.window.rootViewController = mainNavig;
+    
     [self.window makeKeyAndVisible];
     
     return YES;
