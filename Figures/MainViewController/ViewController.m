@@ -114,25 +114,21 @@
         case UIDeviceOrientationPortrait:
             [NSLayoutConstraint deactivateConstraints:self.landscapeConstraints];
             [NSLayoutConstraint activateConstraints:self.portraitConstraints];
-            NSLog(@"Portrait");
             break;
             
         case UIDeviceOrientationPortraitUpsideDown:
             [NSLayoutConstraint deactivateConstraints:self.landscapeConstraints];
             [NSLayoutConstraint activateConstraints:self.portraitConstraints];
-            NSLog(@"Portrait");
             break;
             
         case UIDeviceOrientationLandscapeLeft:
             [NSLayoutConstraint deactivateConstraints:self.portraitConstraints];
             [NSLayoutConstraint activateConstraints:self.landscapeConstraints];
-            NSLog(@"Landscape");
             break;
             
         case UIDeviceOrientationLandscapeRight:
             [NSLayoutConstraint deactivateConstraints:self.portraitConstraints];
             [NSLayoutConstraint activateConstraints:self.landscapeConstraints];
-            NSLog(@"Landscape");
             break;
             
         default:

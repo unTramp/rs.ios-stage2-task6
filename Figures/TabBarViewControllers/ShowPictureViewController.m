@@ -33,6 +33,11 @@
         [self.showImageView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
         [self.showImageView.heightAnchor constraintEqualToConstant:UIScreen.mainScreen.bounds.size.width]
     ]];
+    
+    UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                              action:@selector(handleSingleTap:)];
+    doubleTap.numberOfTapsRequired = 2;
+    [self.view addGestureRecognizer:doubleTap];
 }
 
 - (void)configureWithImage:(UIImage*)img {
@@ -45,6 +50,10 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+       [self dismissViewControllerAnimated:true completion:nil];
 }
 
 @end
