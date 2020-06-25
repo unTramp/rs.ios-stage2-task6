@@ -71,7 +71,7 @@
     dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_UTILITY, 0);
     dispatch_async(queue, ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            cell.backgroundView = [[UIImageView alloc] initWithImage:[self.service getImageByIndex:indexPath.row]];
+            cell.backgroundView = [[UIImageView alloc] initWithImage:[self.service getImageByIndex:indexPath.row isOriginal:false]];
             cell.backgroundColor = UIColor.blueColor;
             [activityIndicator stopAnimating];
         });
@@ -90,7 +90,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     ShowPictureViewController* showImageVC = [[ShowPictureViewController alloc] init];
-    [showImageVC configureWithImage:[self.service getOriginalImageByIndex:indexPath.row]];
+    [showImageVC configureWithImage:[self.service getImageByIndex:indexPath.row isOriginal:true]];
     [self.navigationController presentViewController:showImageVC animated:true completion:nil];
 }
 

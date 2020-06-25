@@ -81,8 +81,7 @@
        dispatch_async(queue, ^{
            dispatch_async(dispatch_get_main_queue(), ^{
                self.fileNameLabel.text = [self.service getAssetFileNameByIndex:index];
-               [self.fileImageView setImage:[self.service getImageByIndex:index]];
-               
+               [self.fileImageView setImage:[self.service getImageByIndex:index isOriginal:false]];
                switch ([self.service getMediaTypeByIndex:index]) {
                    case 0:
                        self.iconFileTypeImageView.image = [UIImage imageNamed: @"unknown"];

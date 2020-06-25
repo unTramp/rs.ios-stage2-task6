@@ -36,7 +36,7 @@
     return self.assets.count;
 }
 
-- (UIImage*)getImageByIndex:(NSInteger) index {
+- (UIImage*)getImageByIndex:(NSInteger) index isOriginal:(BOOL) isOriginalSize {
     
     PHAsset* asset = self.assets[index];
     PHImageRequestOptions* requestOptions = [[PHImageRequestOptions alloc] init];
@@ -48,29 +48,7 @@
     __block UIImage* img;
     
     [manager requestImageForAsset:asset
-                       targetSize:CGSizeMake(180, 180)
-                      contentMode:PHImageContentModeDefault
-                          options:requestOptions
-                    resultHandler:^void(UIImage *image, NSDictionary *info) {
-        img = image;
-    }];
-    
-    return img;
-}
-
-- (UIImage*)getOriginalImageByIndex:(NSInteger) index {
-    
-    PHAsset* asset = self.assets[index];
-    PHImageRequestOptions* requestOptions = [[PHImageRequestOptions alloc] init];
-    requestOptions.resizeMode   = PHImageRequestOptionsResizeModeExact;
-    requestOptions.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
-    requestOptions.synchronous = YES;
-    PHImageManager *manager = [PHImageManager defaultManager];
-
-    __block UIImage* img;
-    
-    [manager requestImageForAsset:asset
-                       targetSize:PHImageManagerMaximumSize
+                       targetSize: isOriginalSize ? PHImageManagerMaximumSize : CGSizeMake(180, 180)
                       contentMode:PHImageContentModeDefault
                           options:requestOptions
                     resultHandler:^void(UIImage *image, NSDictionary *info) {

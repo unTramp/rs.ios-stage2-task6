@@ -17,8 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray* assets;
 
-- (UIImage*)getImageByIndex:(NSInteger) index;
-- (UIImage*)getOriginalImageByIndex:(NSInteger) index;
+- (UIImage*)getImageByIndex:(NSInteger) index isOriginal:(BOOL) isOriginalSize;
 - (NSString*) getAssetFileNameByIndex:(NSInteger) index;
 - (PHAssetMediaType) getMediaTypeByIndex:(NSInteger) index;
 - (NSUInteger) getPixelHeightByIndex:(NSInteger) index;
